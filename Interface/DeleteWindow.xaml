@@ -1,0 +1,36 @@
+﻿<Window x:Class="AppDev.DeleteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppDev"
+        mc:Ignorable="d"
+        Title="DeleteWindow" Height="650" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="492" Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}"/>
+        <Label x:Name="DeleteContact" Content="Delete Contact" HorizontalAlignment="Left" Margin="140,2,0,0" VerticalAlignment="Top" Width="246" FontSize="30" FontFamily="Tahoma" FontWeight="Bold" Height="44"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="492" Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Margin="0,568,0,0"/>
+        <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="131,577,0,0" VerticalAlignment="Top" Width="102" Click="Delete_Button1" Background="#FFF9F9F9" Height="32" FontWeight="Bold" FontSize="14" BorderBrush="Black" Foreground="Black"/>
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="282,577,0,0" VerticalAlignment="Top" Width="102" Click="Exit_Button" Background="#FFF9F9F9" Height="32" FontWeight="Bold" FontSize="14" BorderBrush="Black" Foreground="Black"/>
+        <Label x:Name="FirstName1" Content="First Name:" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.421,0.615" Width="135" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Height="30" Margin="145,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" IsEnabled="False"/>
+        <Label x:Name="Surname1" Content="Surname:" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Height="30" Margin="148,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <TextBox x:Name="Gender" HorizontalAlignment="Left" Height="30" Margin="148,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <Label x:Name="Gender1" Content="Gender:" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Age" HorizontalAlignment="Left" Height="30" Margin="148,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <Label x:Name="Age1" Content="Age:" HorizontalAlignment="Left" Margin="14,302,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Address" HorizontalAlignment="Left" Height="30" Margin="148,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <Label x:Name="Address1" Content="Address:" HorizontalAlignment="Left" Margin="14,355,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Postcode" HorizontalAlignment="Left" Height="30" Margin="148,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <Label x:Name="Postcode1" Content="Postcode:" HorizontalAlignment="Left" Margin="14,412,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Height="30" Margin="148,469,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <Label x:Name="Email1" Content="Email:" HorizontalAlignment="Left" Margin="14,468,0,0" VerticalAlignment="Top" FontSize="16" Width="83" FontWeight="Bold"/>
+        <TextBox x:Name="Phone" HorizontalAlignment="Left" Height="30" Margin="148,522,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" IsEnabled="False"/>
+        <Label x:Name="Phone1" Content="Phone:" HorizontalAlignment="Left" Margin="14,521,0,0" VerticalAlignment="Top" Width="87" Height="32" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="ContactID1" Content="Contact ID:" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="ContactID" HorizontalAlignment="Left" Height="30" Margin="145,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"/>
+        <Image x:Name="DeleteContactIcon" HorizontalAlignment="Left" Height="44" Margin="2,4,0,0" VerticalAlignment="Top" Width="43" Source="Images/contact icon.png"/>
+        <Image x:Name="DeleteIcon" HorizontalAlignment="Left" Height="12" Margin="36,2,0,0" VerticalAlignment="Top" Width="12" Source="Images/delete icon.png"/>
+    </Grid>
+</Window>
